@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+
+ 
+</div>
+<br>
+</br>
+<br>
+<br><br><br><br>
+
+<form class="container" style="border: 1px solid black; height: 500px; width: 400px;">
+  <h1 style="color: red; text-align: center;border-bottom: 2px solid red; margin-bottom: 50px;">VGU Book Store</h1>
+  <div class="form-row">
+    <h1>Sign in <br></h1>
+  
+    <div class="form-group col-md-12" style="margin-top: 50px; ">
+      <label for="inputEmail4">Email or mobile phone number</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="inputPassword4">Password</label>
+      <input type="password" pattern="^(?=.*[a-zA-Z])([0-9]).{6,6}$" class="form-control" id="inputPassword4">
+    </div>
+  </div>
+
+
+
+
+  <p style="align-content: center">
+    <A style="align-content: center" HREF="newpopup.html" onClick="return popup(this, 'stevie')">my popup</A><br>
+  </p>
+  <p align="center">
+    <input type="button" onclick="popup(this, 'about') " value="CLICK HERE">
+  </p>
+  
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+ 
+
+  <button type="submit" class="btn btn-primary"><p><a href="C:\Users\panka\Desktop\hello\simple\welcomPage.html"></a></p> Sign in</button>
+</form>
+</body>
+</html>
+<script>
+  function Vailidation()
+  {
+
+  }
+  function popup(mylink, windowname)
+{
+  if (! window.focus)
+    return true;
+  var href;
+  if (typeof(mylink) == 'string')
+    href=mylink;
+  else 
+    href=mylink.href;
+  window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
+  return false;
+}
+</script>
